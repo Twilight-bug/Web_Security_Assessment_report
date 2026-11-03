@@ -50,3 +50,6 @@ Modern web applications rely heavily on backend REST APIs to fetch database reco
 
 ### 💡 Remediation Strategy
 Implement a strict server-side **Access Control Layer** that maps incoming active session tokens (like JWTs) explicitly to the numerical database resource being requested. Never rely solely on user-supplied numbers to deliver secure database paths.
+
+5. Developed a custom Python 3 automated security scanner (`api_fuzzer.py`) to systematically fuzz the unauthenticated order tracking endpoints (`/rest/track-order/`). The script successfully mapped and exposed extensive internal backend database records dynamically across sequential integer inputs.
+6. 
